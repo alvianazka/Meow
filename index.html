@@ -1,0 +1,62 @@
+<!doctype html>
+  <html>
+  <head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foto kucing</title>
+  </head>
+  <style>
+  .kucing{
+    font-weight: bold;
+    font-size:40px;
+    text-shadow: 3px 3px 5px black;
+    margin-left: 10px;
+    margin-top: 50px;
+    color: antiquewhite;
+  }
+  img{
+    border-radius: 25%;
+    border: solid 20px black;
+    width: 400px;
+    height: 400px;
+  }
+  body {
+  font-family: Verdana, sans-serif;
+  background: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150vh;
+  width: 150vh;
+  margin: 100;
+}
+  button{
+    color: antiquewhite;
+    background: black;
+  }
+  h2{
+    background: red;
+  }
+  </style>
+  <body>
+    <img id="fotoKucing" src="https://cataas.com/cat/:tag">
+    <h2>setelah dipencet harap tunggu 2 detik atau lebih</h2>
+    <h1>pusat pabrik stiker WA</h1>
+    <h6>v.1.0.0</h6>
+    <h1> bisa di Zoom</h1>
+    
+
+<button onclick="gantiFoto()">
+  tombol ganti foto kucing
+</button>
+    <script>
+const img = document.getElementById("fotoKucing");
+
+function gantiFoto() {
+  img.src = "https://cataas.com/cat?" + Math.random();
+}
+</script>
+    
+  </body>
+
